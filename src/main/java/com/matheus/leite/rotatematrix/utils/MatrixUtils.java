@@ -9,7 +9,8 @@ import java.util.stream.Collectors;
 
 public class MatrixUtils {
 
-    private MatrixUtils(){}
+    private MatrixUtils() {
+    }
 
     public static int[][] convertToMatrix(List<Integer> list, Integer matrixOrder) {
         return Lists.partition(list, matrixOrder)
@@ -36,7 +37,7 @@ public class MatrixUtils {
     }
 
     public static Integer iterationNumber(Integer listSize, Integer matrixOrder) {
-        return listSize % 2 ==0 ? (matrixOrder / 2) : getMatrixMiddlePosition(matrixOrder);
+        return listSize % 2 == 0 ? (matrixOrder / 2) : getMatrixMiddlePosition(matrixOrder);
     }
 
     public static Integer getMatrixMiddlePosition(Integer matrixOrder) {
@@ -44,11 +45,11 @@ public class MatrixUtils {
     }
 
     public static Integer increasingIteratorValue(Integer value) {
-        return value +1;
+        return value + 1;
     }
 
     public static Integer decreasingIteratorValue(Integer value) {
-        return value -1;
+        return value - 1;
     }
 
     public static List<Integer> convertToList(int[][] matrix) {
