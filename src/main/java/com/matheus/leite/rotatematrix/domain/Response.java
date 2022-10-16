@@ -10,7 +10,6 @@ import java.util.List;
 @Getter
 @Setter
 public class Response {
-
     private ResponseStatus status;
     private List<Integer> list;
 }
