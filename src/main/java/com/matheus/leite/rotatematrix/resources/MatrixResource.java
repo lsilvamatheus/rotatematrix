@@ -27,7 +27,7 @@ public class MatrixResource {
         Response response = service.rotateMatrix(list);
 
         return response.getStatus().equals(ResponseStatus.VALID)
-                ?  ResponseEntity.status(HttpStatus.OK).body(response)
+                ? ResponseEntity.status(HttpStatus.OK).body(response)
                 : ResponseEntity.status(HttpStatus.NOT_ACCEPTABLE).body(response);
     }
 }
